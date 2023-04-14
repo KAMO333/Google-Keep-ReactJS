@@ -17,7 +17,10 @@ const Note = (props) => {
     setIsHover(false);
   };
 
-  const deleteHandler = () => props.deleteNote(note.id);
+  const deleteHandler = () =>  {
+  toggleModal(false);
+    props.deleteNote(note.id);
+  }
 
   return (
     <div
